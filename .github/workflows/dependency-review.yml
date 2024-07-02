@@ -5,4 +5,4 @@ on:
       - master
 jobs:
   dependency-review:
-    uses: Reusable-Test/abhi-called-repo/.github/workflows/called-dependency-review-workflow.yml@main
+    uses: Reusable-Test/abhi-called-repo/.github/workflows/called-dependency-review-workflow.yml@972114c98dfc1ebb679e8476bcbc5b5da87e5fbe
