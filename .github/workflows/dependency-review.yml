@@ -1,8 +1,14 @@
-name: dependency-review
-on:
-  pull_request:
-    branches:
-      - master
+name: 'Dependency Review'
+on: [pull_request]
+permissions:
+  contents: read
 jobs:
   dependency-review:
-    uses: Reusable-Test/abhi-called-repo/.github/workflows/called-dependency-review-workflow.yml@972114c98dfc1ebb679e8476bcbc5b5da87e5fbe
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout Repository'
+        uses: actions/checkout@v4
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v4
+        with:
+          config-file: 'Reusable-Test/abhi-called-repo/config/dependency-review-config.yml@main'
