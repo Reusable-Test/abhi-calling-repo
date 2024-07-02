@@ -1,0 +1,8 @@
+name: dependency-review
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  dependency-review:
+    uses: Reusable-Test/abhi-called-repo/.github/workflows/called-dependency-review-workflow.yml@main
