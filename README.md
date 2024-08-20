@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-**Note:** This is a deliberately vulnerable app, please do not host it on production or Internet/public facing servers. Use with caution.342 qwqe
+**Note:** This is a deliberately vulnerable app, please do not host it on production or Internet/public facing servers. Use with caution.342 qwqe test 123
 
 ### Docker
 
